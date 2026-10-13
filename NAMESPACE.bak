@@ -1,2 +1,0 @@
-exportPattern("^[[:alpha:]]+")
-S3method(coef, multi.cv.glmnet)
