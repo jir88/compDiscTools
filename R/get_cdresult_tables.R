@@ -26,7 +26,7 @@
 #' @export
 get_cdresult_tables <- function(msa, from, to, via = NULL, ids = NULL) {
   # generate database map
-  db_map <- jrtools::map_cd_alignment(msa = msa, tables = TRUE)
+  db_map <- compDiscTools::map_cd_alignment(msa = msa, tables = TRUE)
   # split full path into jumps between desired intermediate tables
   path_segments <- c(from, via, to)
   fixed_from <- path_segments[-length(path_segments)]

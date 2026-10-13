@@ -54,7 +54,7 @@ get_gap_xics <- function(msa, ids = NULL) {
   xics <- dplyr::collect(xics)
 
   # turn fill status column into a factor
-  fs_levels <- jrtools::get_cdresult_enum(msa = msa,
+  fs_levels <- compDiscTools::get_cdresult_enum(msa = msa,
                                           table = "MissingCompoundIonInstanceItems",
                                           enum = "FillStatus")
   xics$FillStatus <- factor(xics$FillStatus, levels = fs_levels$Value,
